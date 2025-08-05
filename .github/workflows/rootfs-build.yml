@@ -37,7 +37,7 @@ jobs:
         sudo chroot $GITHUB_WORKSPACE/portadesx-2404 /bin/bash -c "apt update && apt upgrade -y && apt install xfce4 xfce4-terminal dbus-x11 pulseaudio nano wget curl sudo adduser tigervnc-standalone-server -y && apt clean"
     - name: Setting up VNC Script
       run: | 
-        sudo chroot $GITHUB_WORKSPACE/portadesx-2404 /bin/bash -c "wget https://raw.githubusercontent.com/arfshl/portadesx-testing/refs/heads/main/scripts/vncsetup.sh && sh vncsetup.sh && rm vncsetup.sh"
+        sudo chroot $GITHUB_WORKSPACE/portadesx-2404 /bin/bash -c "wget https://raw.githubusercontent.com/arfshl/portadesx/refs/heads/main/scripts/vncsetup.sh && sh vncsetup.sh && rm vncsetup.sh"
     - name: Adding user and password
       run: |
         sudo chroot $GITHUB_WORKSPACE/portadesx-2404 /bin/bash -c "sudo adduser --disabled-password --gecos "portadesx" portadesx && echo 'portadesx:123' | chpasswd && echo 'portadesx ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/user"
