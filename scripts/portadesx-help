@@ -1,0 +1,17 @@
+#!/bin/sh
+
+echo "PortadesX is a Termux proot-distro rootfs with pre-installed XFCE desktop environment and user apps, based on Ubuntu LTS"
+
+echo "Default username is 'portadesx'"
+
+echo "Default 'sudo' password is '123'"
+
+echo "Default VNC address and port is 127.0.0.1:3"
+
+echo "Default VNC password is 1234567890"
+
+echo "Usage:"
+
+
+
+
