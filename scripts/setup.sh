@@ -30,7 +30,7 @@ pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth
 printf 'proot-distro login portadesx --user portadesx' >> /data/data/com.termux/files/usr/bin/portadesx-cli
 
 # for X11 session
-cat <<EOF > /data/data/com.termux/files/usr/bin/portadesx-x11
+cat <<EOF > /data/data/com.termux/files/usr/bin/portadesx-gui
 #!/bin/sh
 export XDG_RUNTIME_DIR=${TMPDIR}
 kill -9 \$(pgrep -f "termux.x11")\ 2>/dev/null
@@ -42,7 +42,7 @@ proot-distro login portadesx --shared-tmp -- /bin/sh -c 'export PULSE_SERVER=127
 EOF
 
 # Make all of them executable
-chmod +x /data/data/com.termux/files/usr/bin/portadesx-x11
+chmod +x /data/data/com.termux/files/usr/bin/portadesx-gui
 chmod +x /data/data/com.termux/files/usr/bin/portadesx-cli
 
 # PulseAudio at Setup
