@@ -44,6 +44,10 @@ EOF
 chmod +x /data/data/com.termux/files/usr/bin/portadesx-x11
 chmod +x /data/data/com.termux/files/usr/bin/portadesx-cli
 
+# PulseAudio at Setup
+LD_PRELOAD=/system/lib64/libskcodec.so
+pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1"
+
 # Install rootfs
 proot-distro install portadesx
 
