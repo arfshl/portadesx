@@ -21,6 +21,10 @@ distro_setup() {
 }
 EOF
 
+# PulseAudio at startup on bash.bashrc
+echo 'LD_PRELOAD=/system/lib64/libskcodec.so
+pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1"' >> $PREFIX/etc/bash.bashrc
+
 # Create startup script
 # for CLI session
 printf 'proot-distro login portadesx --user portadesx' >> /data/data/com.termux/files/usr/bin/portadesx-cli
@@ -28,8 +32,6 @@ printf 'proot-distro login portadesx --user portadesx' >> /data/data/com.termux/
 # for X11 session
 cat <<EOF > /data/data/com.termux/files/usr/bin/portadesx-x11
 #!/bin/sh
-LD_PRELOAD=/system/lib64/libskcodec.so
-pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1"
 export XDG_RUNTIME_DIR=${TMPDIR}
 kill -9 \$(pgrep -f "termux.x11")\ 2>/dev/null
 kill -9 \$(pgrep -f "virgl")\ 2>/dev/null
