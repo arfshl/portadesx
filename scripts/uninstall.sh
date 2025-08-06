@@ -11,3 +11,7 @@ apt remove x11-repo tur-repo -y
 rm $PREFIX/etc/proot-distro/portadesx.sh
 rm /data/data/com.termux/files/usr/bin/portadesx-cli
 rm /data/data/com.termux/files/usr/bin/portadesx-x11
+
+sed -i '/LD_PRELOAD=/system/lib64/libskcodec.so/d' $PREFIX/etc/bash.bashrc
+sed -i '/pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1"/d' $PREFIX/etc/bash.bashrc
+esd -i '/sleep 5/d' $PREFIX/etc/bash.bashrc
