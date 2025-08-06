@@ -32,8 +32,8 @@ rm -rf /tmp/.X11-unix/X3' >> /usr/local/bin/stopvnc
 
 # Create script for restarting VNC server
 echo '#!/bin/sh
-vncstop
-vncstart' >> /usr/local/bin/restartvnc
+stopvnc
+startvnc' >> /usr/local/bin/restartvnc
 
 # Make it executable
 cd /usr/local/bin
