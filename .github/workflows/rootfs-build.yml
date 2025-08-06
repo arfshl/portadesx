@@ -58,7 +58,7 @@ jobs:
         sudo chroot $GITHUB_WORKSPACE/portadesx-2404 /bin/bash -c "ln -s /usr/share/applications/office-online.desktop /home/portadesx/Desktop/office-online.desktop"
         sudo chroot $GITHUB_WORKSPACE/portadesx-2404 /bin/bash -c "ln -s /usr/share/applications/firefox.desktop /home/portadesx/Desktop/firefox.desktop"
         sudo chroot $GITHUB_WORKSPACE/portadesx-2404 /bin/bash -c "ln -s /usr/share/applications/chromium.desktop /home/portadesx/Desktop/chromium.desktop"
-        sudo chroot $GITHUB_WORKSPACE/portadesx-2404 /bin/bash -c "ln -s /usr/share/applications/vlc.desktop /home/portadesx/Desktop/Desktopvlc.desktop"
+        sudo chroot $GITHUB_WORKSPACE/portadesx-2404 /bin/bash -c "ln -s /usr/share/applications/vlc.desktop /home/portadesx/Desktop/vlc.desktop"
         sudo chroot $GITHUB_WORKSPACE/portadesx-2404 /bin/bash -c "ln -s /usr/share/applications/thunderbird.desktop /home/portadesx/Desktop/thunderbird.desktop"
         sudo chroot $GITHUB_WORKSPACE/portadesx-2404 /bin/bash -c "ln -s /usr/share/applications/org.gnome.Evince.desktop /home/portadesx/Desktop/org.gnome.Evince.desktop"
         sudo chroot $GITHUB_WORKSPACE/portadesx-2404 /bin/bash -c "ln -s /usr/share/applications/galculator.desktop /home/portadesx/Desktop/galculator.desktop"
