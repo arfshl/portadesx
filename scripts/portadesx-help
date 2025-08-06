@@ -24,5 +24,5 @@ echo "To use offline office document editing, install this extension from chromi
 echo "https://chromewebstore.google.com/detail/office-editing-for-docs-s/gbkeegbaiigmenfmjfclcdgdpimamgkj"
 echo "Once instaled,you just need to drag-and-drop documents from file manager to chromium browser to edit it offline."
 echo 
-echo "For further information and/or detailed help, please visit our repository at https://github.com/arfshl/portadesx/"
+echo "For further information, detailed instructions. and intruction for upgrading to next release , please visit our repository at https://github.com/arfshl/portadesx/"
 
