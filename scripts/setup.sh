@@ -14,8 +14,8 @@ apt install curl wget nano proot-distro termux-x11 pulseaudio vulkan-loader-andr
 # Create manual proot-distro configuration
 cat <<EOF > $PREFIX/etc/proot-distro/portadesx.sh
 DISTRO_NAME="PortadesX"
-TARBALL_URL['aarch64']="https://github.com/arfshl/portadesx/releases/download/24.04-202508061018/portadesx-2404.tar.xz"
-TARBALL_SHA256['aarch64']="d6e4ac8a6da52a9c5c8051c4894ee068c7d2695d93a3d1689cb9f59a88619921"
+TARBALL_URL['aarch64']="https://github.com/arfshl/portadesx/releases/download/24.04-202508061357/portadesx-2404.tar.xz"
+TARBALL_SHA256['aarch64']="4d0e26abbb5851824891c3dbd0cbe874685f8400367bd4b27f6060b364793024"
 distro_setup() {
         run_proot_cmd ln -s /storage/emulated/0/ /home/portadesx/Desktop/android_files
 }
