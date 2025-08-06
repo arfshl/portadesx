@@ -22,7 +22,7 @@ echo "Use 'exit' commands if you wish to log-out from proot shell and back to te
 echo
 echo "To use offline office document editing, install this extension from chromium browser"
 echo "https://chromewebstore.google.com/detail/office-editing-for-docs-s/gbkeegbaiigmenfmjfclcdgdpimamgkj"
-echo "Once instaled,you just need to drag-and-drop documents from file manager to chromium browser to edit it offline."
+echo "Once installed,you just need to drag-and-drop documents from file manager to chromium browser window to edit it offline."
 echo
 echo "For updating your system (Not related to upgrading to next release), use 'sudo apt update && sudo apt upgrade' commands"
 echo "press y and enter to confirm update, or press n and enter to abort"
