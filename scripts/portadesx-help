@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "PortadesX is a Termux proot-distro rootfs with pre-installed XFCE desktop environment and user apps, based on Ubuntu LTS"
+echo "PortadesX is a Termux proot-distro rootfs with pre-installed XFCE desktop environment and with internet and multimedia apps, based on Ubuntu LTS"
 echo
 echo "Default username is 'portadesx'"
 echo "Default 'sudo' password is '123'"
