@@ -17,13 +17,14 @@ DISTRO_NAME="PortadesX"
 TARBALL_URL['aarch64']="https://github.com/arfshl/portadesx/releases/download/24.04-202508050509/portadesx-2404.tar.xz"
 TARBALL_SHA256['aarch64']="ee7305ebaba6aef1261577ae26a6fab2bcd3799bcb869d29170873b5e2dc9d82"
 distro_setup() {
-        run_proot_cmd ln -s /storage/emulated/0/ /home/portadesx/android_files
+        run_proot_cmd ln -s /storage/emulated/0/ /home/portadesx/Desktop/android_files
 }
 EOF
 
 # PulseAudio at startup on bash.bashrc
 echo 'LD_PRELOAD=/system/lib64/libskcodec.so
-pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1"' >> $PREFIX/etc/bash.bashrc
+pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1"
+sleep 5' >> $PREFIX/etc/bash.bashrc
 
 # Create startup script
 # for CLI session
