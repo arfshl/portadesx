@@ -8,6 +8,8 @@ echo
 echo "Default VNC server address is 127.0.0.1:3"
 echo "Default VNC password is 1234567890"
 echo
+echo "Use 'portadesx-help' command to view this help page."
+echo
 echo "To use Command-Line session, use 'portadesx-cli' commands, and use 'exit' commands for log-out from proot shell and back to termux shell"
 echo "To use Graphical session with Termux:X11, use 'portadesx-gui' commands and press 'Ctrl+C' for stopping GUI"
 echo
@@ -21,4 +23,6 @@ echo
 echo "To use offline office document editing, install this extension from chromium browser"
 echo "https://chromewebstore.google.com/detail/office-editing-for-docs-s/gbkeegbaiigmenfmjfclcdgdpimamgkj"
 echo "Once instaled,you just need to drag-and-drop documents from file manager to chromium browser to edit it offline."
+echo 
+echo "For further information and/or detailed help, please visit our repository at https://github.com/arfshl/portadesx/"
 
