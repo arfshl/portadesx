@@ -53,6 +53,11 @@ pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth
 # Install rootfs
 proot-distro install portadesx
 
+# Create Help Script
+wget https://raw.githubusercontent.com/arfshl/portadesx/refs/heads/main/scripts/portadesx-help -P /data/data/com.termux/files/usr/bin/
+chmod +x data/data/com.termux/files/usr/bin/portadesx-help
+portadesx-help
+
 
 
 
