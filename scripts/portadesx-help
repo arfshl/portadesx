@@ -23,6 +23,9 @@ echo
 echo "To use offline office document editing, install this extension from chromium browser"
 echo "https://chromewebstore.google.com/detail/office-editing-for-docs-s/gbkeegbaiigmenfmjfclcdgdpimamgkj"
 echo "Once instaled,you just need to drag-and-drop documents from file manager to chromium browser to edit it offline."
+echo
+echo "For updating your system (Not related to upgrading to next release), use 'sudo apt update && sudo apt upgrade' commands, press y and enter to confirm update, or press n and enter to abort"
+echo "Don't worry, this update doesn't need reboot or forcefully reboot and making you lose your works or progress ;)"
 echo 
 echo "For further information, intructions for upgrading to next release, or just more detailed how-tos, please visit our repository at https://github.com/arfshl/portadesx/"
 
