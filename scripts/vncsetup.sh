@@ -19,7 +19,7 @@ echo '#!/bin/sh
 export USER=portadesx
 export HOME=/home/portadesx
 vncserver -name remote-desktop -localhost no :3
-echo 'VNC server address: 127.0.0.1:3'' >> /usr/local/bin/startvnc
+echo 'VNC server address: 127.0.0.1:3 Password: 1234567890'' >> /usr/local/bin/startvnc
 
 # Create script for stopping VNC server
 echo '#!/bin/sh
