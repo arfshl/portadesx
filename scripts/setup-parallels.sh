@@ -1,0 +1,37 @@
+# Create manual proot-distro configuration
+cat <<EOF > $PREFIX/etc/proot-distro/portadesx.sh
+DISTRO_NAME="PortadesX"
+TARBALL_URL['aarch64']="https://github.com/arfshl/portadesx/releases/download/24.04-202508070437/portadesx-2404.tar.xz"
+TARBALL_SHA256['aarch64']="0bc6a550e696532fc54be3f9563b697fe6234d3f4452fa1dc51c6357998b2541"
+distro_setup() {
+        run_proot_cmd ln -s /storage/emulated/0/ /home/portadesx/Desktop/android_files
+}
+EOF
+
+# Create startup script
+# for CLI session
+printf 'proot-distro login portadesx --user portadesx' >> /data/data/com.termux/files/usr/bin/portadesx-cli
+
+# for X11 session
+cat <<EOF > /data/data/com.termux/files/usr/bin/portadesx-gui
+#!/bin/sh
+export XDG_RUNTIME_DIR=${TMPDIR}
+kill -9 \$(pgrep -f "termux.x11")\ 2>/dev/null
+kill -9 \$(pgrep -f "virgl")\ 2>/dev/null
+proot-distro login portadesx --shared-tmp -- /bin/sh -c 'kill -9 $(pgrep -f "x11") 2>/dev/null'
+virgl_test_server_android &
+termux-x11 :0 >/dev/null &
+proot-distro login portadesx --shared-tmp -- /bin/sh -c 'export PULSE_SERVER=127.0.0.1 && export XDG_RUNTIME_DIR=${TMPDIR} && su - portadesx -c "DISPLAY=:0 GALLIUM_DRIVER=virpipe startxfce4"'
+EOF
+
+# Make all of them executable
+chmod +x /data/data/com.termux/files/usr/bin/portadesx-gui
+chmod +x /data/data/com.termux/files/usr/bin/portadesx-cli
+
+# Install rootfs
+proot-distro install portadesx
+
+# Create Help Script
+wget https://raw.githubusercontent.com/arfshl/portadesx/refs/heads/main/scripts/portadesx-help -P /data/data/com.termux/files/usr/bin/
+chmod +x data/data/com.termux/files/usr/bin/portadesx-help
+portadesx-help
