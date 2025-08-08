@@ -14,5 +14,4 @@ rm /data/data/com.termux/files/usr/bin/portadesx-gui
 rm /data/data/com.termux/files/usr/bin/portadesx-help
 
 sed -i '/LD_PRELOAD=/system/lib64/libskcodec.so/d' $PREFIX/etc/bash.bashrc
-sed -i '/pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1"/d' $PREFIX/etc/bash.bashrc
-esd -i '/sleep 5/d' $PREFIX/etc/bash.bashrc
+sed -i '/pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1/d' $PREFIX/etc/bash.bashrc
