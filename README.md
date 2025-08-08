@@ -27,13 +27,22 @@ PortadesX is a Termux proot-distro rootfs with pre-installed XFCE desktop enviro
 
 
 
-### Install
+### Install 
 
     apt update && apt upgrade && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/portadesx/refs/heads/main/scripts/setup.sh && sh setup.sh && rm setup.sh
+
+### Install (Parallel install with other flavors)
+
+    apt update && apt upgrade && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/portadesx/refs/heads/main/scripts/setup-parallel.sh && sh setup-parallel.sh && rm setup-parallel.sh
 
 ### Uninstall
 
     apt update && apt upgrade && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/portadesx/refs/heads/main/scripts/uninstall.sh && sh uninstall.sh && rm uninstall.sh
+
+### Uninstall (Parallel install with other flavors)
+
+    apt update && apt upgrade && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/portadesx/refs/heads/main/scripts/uninstall-parallels.sh && sh uninstall-parallels.sh && rm uninstall-parallels.sh
+
 
 #### License
 [GPLv3.](https://github.com/arfshl/portadesx/raw/main/LICENSE)
