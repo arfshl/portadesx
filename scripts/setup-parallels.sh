@@ -1,3 +1,4 @@
+#!/bin/sh
 # Create manual proot-distro configuration
 cat <<EOF > $PREFIX/etc/proot-distro/portadesx.sh
 DISTRO_NAME="PortadesX"
