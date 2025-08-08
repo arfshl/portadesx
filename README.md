@@ -50,3 +50,7 @@ PortadesX is a Termux proot-distro rootfs with pre-installed XFCE desktop enviro
 #### Code used from various projects:
 - [andronixapp/andronixorigin: VNC installation script](https://github.com/AndronixApp/AndronixOrigin)
 - [linuxdroidmasters/termux-desktops: 3D Acceleration, PulseAudio Startup, Process kill script](https://github.com/LinuxDroidMaster/Termux-Desktops)
+- Song: Janji - Heroes Tonight (feat. Johnning) [NCS Release]
+Music provided by NoCopyrightSounds
+Free Download/Stream: http://ncs.io/ht
+Watch: http://youtu.be/3nQNiWdeH2Q
