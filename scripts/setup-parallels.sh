@@ -1,13 +1,6 @@
 #!/bin/sh
 # Create manual proot-distro configuration
-cat <<EOF > $PREFIX/etc/proot-distro/portadesx.sh
-DISTRO_NAME="PortadesX"
-TARBALL_URL['aarch64']="https://github.com/arfshl/portadesx/releases/download/24.04-202508070437/portadesx-2404.tar.xz"
-TARBALL_SHA256['aarch64']="0bc6a550e696532fc54be3f9563b697fe6234d3f4452fa1dc51c6357998b2541"
-distro_setup() {
-        run_proot_cmd ln -s /storage/emulated/0/ /home/portadesx/Desktop/android_files
-}
-EOF
+wget https://raw.githubusercontent.com/portadesx/portadesx/refs/heads/main/scripts/portadesx.sh -P $PREFIX/etc/proot-distro/portadesx.sh
 
 # Create startup script
 # for CLI session
