@@ -12,6 +12,7 @@
 ##### PRoot shell
 - `startvnc` - start vnc server
 - `stopvnc` - stop vnc server
+- `restartvnc` - restart vnc server
 
 ### Update existing installation 
 Usually that's always can be done with `sudo apt update && sudo apt upgrade -y` but stay keep tracks on release note, who knows that we can be including our own feature ontop of that
