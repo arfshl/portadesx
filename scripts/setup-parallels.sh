@@ -33,6 +33,6 @@ chmod +x /data/data/com.termux/files/usr/bin/portadesx-cli
 proot-distro install portadesx
 
 # Create Help Script
-wget https://raw.githubusercontent.com/arfshl/portadesx/refs/heads/main/scripts/portadesx-help -P /data/data/com.termux/files/usr/bin/
+wget https://raw.githubusercontent.com/portadesx/portadesx/refs/heads/main/scripts/portadesx-help -P /data/data/com.termux/files/usr/bin/
 chmod +x data/data/com.termux/files/usr/bin/portadesx-help
 portadesx-help
