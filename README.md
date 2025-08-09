@@ -29,19 +29,19 @@ PortadesX is a Termux proot-distro rootfs with pre-installed XFCE desktop enviro
 
 ### Install 
 
-    apt update && apt upgrade && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/portadesx/refs/heads/main/scripts/setup.sh && sh setup.sh && rm setup.sh
+    apt update && apt upgrade && apt install wget -y && wget https://raw.githubusercontent.com/portadesx/portadesx/refs/heads/main/scripts/setup.sh && sh setup.sh && rm setup.sh
 
 ### Install (Parallel install with other flavors)
 
-    apt update && apt upgrade && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/portadesx/refs/heads/main/scripts/setup-parallels.sh && sh setup-parallels.sh && rm setup-parallels.sh
+    apt update && apt upgrade && apt install wget -y && wget https://raw.githubusercontent.com/portadesx/portadesx/refs/heads/main/scripts/setup-parallels.sh && sh setup-parallels.sh && rm setup-parallels.sh
 
 ### Uninstall
 
-    apt update && apt upgrade && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/portadesx/refs/heads/main/scripts/uninstall.sh && sh uninstall.sh && rm uninstall.sh
+    apt update && apt upgrade && apt install wget -y && wget https://raw.githubusercontent.com/portadesx/portadesx/refs/heads/main/scripts/uninstall.sh && sh uninstall.sh && rm uninstall.sh
 
 ### Uninstall (Parallel install with other flavors)
 
-    apt update && apt upgrade && apt install wget -y && wget https://raw.githubusercontent.com/arfshl/portadesx/refs/heads/main/scripts/uninstall-parallels.sh && sh uninstall-parallels.sh && rm uninstall-parallels.sh
+    apt update && apt upgrade && apt install wget -y && wget https://raw.githubusercontent.com/portadesx/portadesx/refs/heads/main/scripts/uninstall-parallels.sh && sh uninstall-parallels.sh && rm uninstall-parallels.sh
 
 
 #### License
