@@ -19,6 +19,7 @@ PortadesX is a Termux proot-distro rootfs with pre-installed XFCE desktop enviro
 - [Ristretto Image Viewer](https://docs.xfce.org/apps/ristretto/start)
 - [Mousepad Text Editor](https://docs.xfce.org/apps/mousepad/start)
 - [Xarchiver Archive Manager](https://github.com/ib/xarchiver)
+- [Galculator](https://launchpad.net/ubuntu/+source/galculator)
 
 ### Screenshots
 ![1](https://raw.githubusercontent.com/portadesx/portadesx-screenshots/main/24.04/xfce/desktop.jpg)
