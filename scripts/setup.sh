@@ -12,14 +12,7 @@ apt upgrade -y -o Dpkg::Options::="--force-confold"
 apt install curl wget nano proot-distro termux-x11 pulseaudio vulkan-loader-android mesa-zink virglrenderer-mesa-zink virglrenderer-android -y
 
 # Create manual proot-distro configuration
-cat <<EOF > $PREFIX/etc/proot-distro/portadesx.sh
-DISTRO_NAME="PortadesX"
-TARBALL_URL['aarch64']="https://github.com/arfshl/portadesx/releases/download/24.04-202508070437/portadesx-2404.tar.xz"
-TARBALL_SHA256['aarch64']="0bc6a550e696532fc54be3f9563b697fe6234d3f4452fa1dc51c6357998b2541"
-distro_setup() {
-        run_proot_cmd ln -s /storage/emulated/0/ /home/portadesx/Desktop/android_files
-}
-EOF
+wget https://github.com/portadesx/portadesx/portadesx.sh -P $PREFIX/etc/proot-distro/portadesx.sh
 
 # PulseAudio at startup on bash.bashrc
 echo 'LD_PRELOAD=/system/lib64/libskcodec.so
