@@ -26,7 +26,15 @@ PortadesX is a Termux proot-distro rootfs with pre-installed XFCE desktop enviro
 ![3](https://raw.githubusercontent.com/portadesx/portadesx-screenshots/main/24.04/xfce/app2.jpg)
 ![4](https://raw.githubusercontent.com/portadesx/portadesx-screenshots/main/24.04/xfce/vnc.jpg)
 
+### Minimum System Requirements
+- Android 8.0+ (Fixes for error code [Process completed (signal 9) - press Enter] for Android 12+ can be see [here](https://github.com/agnostic-apollo/Android-Docs/blob/master/en/docs/apps/processes/phantom-cached-and-empty-processes.md#internal-details-for-android-14-and-higher))
+- 4GB of RAM
+- 10GB of empty space
 
+### Apps Needed
+-  [Termux](https://github.com/termux/termux-app/releases/)
+- [Termux:X11 (for X11 session)](https://github.com/termux/termux-x11)
+- [VNC Viewer (for VNC session)](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android)
 
 ### Install 
 
@@ -44,7 +52,8 @@ PortadesX is a Termux proot-distro rootfs with pre-installed XFCE desktop enviro
 
     apt update && apt upgrade && apt install wget -y && wget https://raw.githubusercontent.com/portadesx/portadesx/refs/heads/main/scripts/uninstall-parallels.sh && sh uninstall-parallels.sh && rm uninstall-parallels.sh
 
-
+### Documentation
+See [docs](https://github.com/portadesx/portadesx/blob/main/docs/README.md)
 #### License
 [GPLv3.](https://github.com/arfshl/portadesx/raw/main/LICENSE)
     
