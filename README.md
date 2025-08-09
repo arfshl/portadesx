@@ -21,9 +21,10 @@ PortadesX is a Termux proot-distro rootfs with pre-installed XFCE desktop enviro
 - [Xarchiver Archive Manager](https://github.com/ib/xarchiver)
 
 ### Screenshots
-![Screenshot_20250808_134942_TermuxX11](https://github.com/user-attachments/assets/240c10d9-136a-415c-a848-c253e2659527)
-![Screenshot_20250808_140303_TermuxX11](https://github.com/user-attachments/assets/34b4cd7b-b574-40ca-9dbf-352dd8893424)
-![Screenshot_20250808_140053_TermuxX11](https://github.com/user-attachments/assets/b638ae3d-0cfd-4c7d-bba4-4150c3893150)
+![1](https://raw.githubusercontent.com/portadesx/portadesx-screenshots/main/24.04/xfce/desktop.jpg)
+![2](https://raw.githubusercontent.com/portadesx/portadesx-screenshots/main/24.04/xfce/app1.jpg)
+![3](https://raw.githubusercontent.com/portadesx/portadesx-screenshots/main/24.04/xfce/app2.jpg)
+![4](https://raw.githubusercontent.com/portadesx/portadesx-screenshots/main/24.04/xfce/vnc.jpg)
 
 
 
