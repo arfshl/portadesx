@@ -4,7 +4,7 @@ PortadesX is a Termux proot-distro rootfs with pre-installed XFCE desktop enviro
 
 ### Core Features:
 
-- Pre-installed XFCE Desktop, which simple and lightweight for Android devices, but highly customizable (Also with [LXQt](https://github.com/portadesx/portadesx-lxqt/), Others are coming soon!)
+- Pre-installed XFCE Desktop, which simple and lightweight for Android devices, but highly customizable (Also with [LXQt](https://github.com/portadesx/portadesx-lxqt/),
 - Pre-configured Sound, User, and VNC Server with easy command
 - Pre-installed Apps
 - Pre-configured access to android files
@@ -15,10 +15,10 @@ PortadesX is a Termux proot-distro rootfs with pre-installed XFCE desktop enviro
 - [Chromium Web Browser](https://chromium.org)
 - [Mozilla Thunderbird](https://thunderbird.net)
 - [VLC Media Player](https://www.videolan.org/vlc/)
-- [Evince Document Viewer](https://wiki.gnome.org/Apps/Evince)
+- [Evince PDF Viewer](https://wiki.gnome.org/Apps/Evince)
 - [Ristretto Image Viewer](https://docs.xfce.org/apps/ristretto/start)
 - [Mousepad Text Editor](https://docs.xfce.org/apps/mousepad/start)
-- [Xarchiver Archive Manager](https://github.com/ib/xarchiver)
+- [Xarchiver File Archiver](https://github.com/ib/xarchiver)
 - [Galculator](https://launchpad.net/ubuntu/+source/galculator)
 - Chromium shortcut to Microsoft Office Online, see [docs](https://github.com/portadesx/portadesx/blob/main/docs%2FREADME.md) for offline alternative 
 
