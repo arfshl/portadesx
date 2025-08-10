@@ -1,11 +1,11 @@
 # Table of Contents
-- [List of commands](https://github.com/portadesx/portadesx/blob/main/docs/README.md#list-of-portadesx-commands)
+- [List of portadesx commands](https://github.com/portadesx/portadesx/blob/main/docs/README.md#list-of-portadesx-commands)
 - [Default users password and vnc credentials](https://github.com/portadesx/portadesx/blob/main/docs/README.md#default-users-password-and-vnc-credentials)
 - [Update existing installation](https://github.com/portadesx/portadesx/blob/main/docs/README.md#update-existing-installation)
 - [Upgrade to newer ubuntu release](https://github.com/portadesx/portadesx/blob/main/docs/README.md#upgrade-to-newer-ubuntu-release)
 - [Office Software](https://github.com/portadesx/portadesx/blob/main/docs/README.md#office-software)
 
-### List of portadesx-commands
+### List of portadesx commands
 ##### Termux Shell
 - `portadesx-cli` - for enter to proot shell
 - `portadesx-gui` - start X11 session
@@ -14,6 +14,7 @@
 - `startvnc` - start vnc server
 - `stopvnc` - stop vnc server
 - `restartvnc` - restart vnc server
+- `portadesx-help` - print help message
 
 ### Default user password and vnc credentials 
 - Default user is `portadesx`
