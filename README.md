@@ -4,7 +4,7 @@ PortadesX is a Termux proot-distro rootfs with pre-installed XFCE desktop enviro
 
 ### Core Features:
 
-- Pre-installed XFCE Desktop, which simple and lightweight for Android devices, but highly customizable (Others are coming soon!)
+- Pre-installed XFCE Desktop, which simple and lightweight for Android devices, but highly customizable (Also with [LXQt](https://github.com/portadesx/portadesx-lxqt/), Others are coming soon!)
 - Pre-configured Sound, User, and VNC Server with easy command
 - Pre-installed Apps
 - Pre-configured access to android files
@@ -56,7 +56,7 @@ PortadesX is a Termux proot-distro rootfs with pre-installed XFCE desktop enviro
 ### Documentation
 After installing, it's reccomended to read usage instructions. see [documentation](https://github.com/portadesx/portadesx/blob/main/docs/README.md)
 #### License
-[GPLv3.](https://github.com/arfshl/portadesx/raw/main/LICENSE)
+[GPLv3.](https://github.com/portadesx/portadesx/raw/main/LICENSE)
     
 #### Code used from various projects:
 - [andronixapp/andronixorigin: VNC installation script](https://github.com/AndronixApp/AndronixOrigin)
