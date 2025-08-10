@@ -4,7 +4,7 @@ PortadesX is a Termux proot-distro rootfs with pre-installed XFCE desktop enviro
 
 ### Core Features:
 
-- Pre-installed XFCE Desktop, which simple and lightweight for Android devices, but highly customizable
+- Pre-installed [XFCE](xfce.org) Desktop, which simple and lightweight for Android devices, but highly customizable
 - Pre-configured Sound, User, and VNC Server with easy command
 - Pre-installed Apps
 - Pre-configured access to android files
