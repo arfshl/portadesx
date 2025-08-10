@@ -60,5 +60,5 @@ After installing, it's reccomended to read usage instructions. see [documentatio
 [GPLv3](https://github.com/portadesx/portadesx/blob/main/LICENSE) and [CC-BY-SA 4.0](https://github.com/portadesx/portadesx-screenshots/blob/main/LICENSE.md) for screenshots
     
 #### Code used from various projects:
-- [andronixapp/andronixorigin: VNC installation script](https://github.com/AndronixApp/AndronixOrigin) Licensed Under MIT License,
+- [andronixapp/andronixorigin: VNC installation script](https://github.com/AndronixApp/AndronixOrigin) Licensed Under MIT License.
 - [linuxdroidmasters/termux-desktops: 3D Acceleration, PulseAudio Startup, Process kill. script](https://github.com/LinuxDroidMaster/Termux-Desktops) Licensed Under GPLv3.
