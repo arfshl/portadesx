@@ -18,7 +18,7 @@
 - `portadesx-help` - print help message
 
 ### Difference between Termux:X11 and VNC Session
-X11 session excells speed so you can expect no lagging on gestures or video playback, but this can't be zoomed so this is make smaller screen not too comfortable. Meanwhile VNC graphics is a bit lagging meanwhile do a gesture and playing a video but VNC can be zoomed and give convenience for smaller screen user but with sacrificing performance
+X11 session excells speed so you can expect no lagging on gestures or video playback, but this can't be zoomed so this is make smaller screen not too comfortable. Meanwhile VNC graphics is a bit lagging meanwhile doing a gesture or playing a video but VNC can be zoomed and give convenience for smaller screen user but with sacrificing performance
 
 ### Default user password and vnc credentials 
 - Default user is `portadesx`
