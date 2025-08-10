@@ -25,8 +25,7 @@ PortadesX is a Termux proot-distro rootfs with pre-installed XFCE desktop enviro
 ### Screenshots
 ![1](https://raw.githubusercontent.com/portadesx/portadesx-screenshots/main/24.04/xfce/desktop.jpg)
 ![2](https://raw.githubusercontent.com/portadesx/portadesx-screenshots/main/24.04/xfce/app1.jpg)
-![3](https://raw.githubusercontent.com/portadesx/portadesx-screenshots/main/24.04/xfce/app2.jpg)
-![4](https://raw.githubusercontent.com/portadesx/portadesx-screenshots/main/24.04/xfce/vnc.jpg)
+![3](https://raw.githubusercontent.com/portadesx/portadesx-screenshots/main/24.04/xfce/vnc.jpg)
 
 ### Minimum System Requirements
 - Android 8.0+ (Fixes for error code [Process completed (signal 9) - press Enter] for Android 12+ can be see [here](https://github.com/agnostic-apollo/Android-Docs/blob/master/en/docs/apps/processes/phantom-cached-and-empty-processes.md#internal-details-for-android-14-and-higher))
