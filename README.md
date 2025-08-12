@@ -12,7 +12,7 @@ PortadesX is a Termux proot-distro rootfs with pre-installed XFCE desktop enviro
 
 ##### List of pre-installed apps
 - [Firefox Web Browser](https://www.firefox.com/en-US/)
-- [Chromium Web Browser](https://chromium.org)
+- [Chromium Web Browser (except armhf)](https://chromium.org)
 - [Mozilla Thunderbird](https://thunderbird.net)
 - [VLC Media Player](https://www.videolan.org/vlc/)
 - [Evince PDF Viewer](https://wiki.gnome.org/Apps/Evince)
@@ -20,7 +20,7 @@ PortadesX is a Termux proot-distro rootfs with pre-installed XFCE desktop enviro
 - [Mousepad Text Editor](https://docs.xfce.org/apps/mousepad/start)
 - [Xarchiver File Archiver](https://github.com/ib/xarchiver)
 - [Galculator](https://launchpad.net/ubuntu/+source/galculator)
-- Chromium shortcut to Microsoft Office Online, see [docs](https://github.com/portadesx/portadesx/blob/main/docs%2FREADME.md) for offline alternative 
+- Chromium shortcut to Microsoft Office Online (except armhf), see [docs](https://github.com/portadesx/portadesx/blob/main/docs%2FREADME.md) for offline alternative 
 
 ### Screenshots
 ![1](https://raw.githubusercontent.com/portadesx/portadesx-screenshots/main/24.04/xfce/desktop.jpg)
