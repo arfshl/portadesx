@@ -273,7 +273,7 @@ jobs:
             portadesx-2404-aarch64/portadesx-2404-aarch64.tar.xz
             portadesx-2404-armhf/portadesx-2404-armhf.tar.xz
             portadesx-2404-x86_64/portadesx-2404-x86_64.tar.xz
-        env:
+      env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
         
