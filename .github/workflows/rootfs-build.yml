@@ -1,4 +1,4 @@
-name: rootfs-build
+name: build-2404
 
 on:
   workflow_dispatch:
@@ -9,7 +9,7 @@ permissions:
 
 jobs:
 
-  rootfs-build:
+  build-aarch64:
   
     runs-on: ubuntu-24.04-arm
 
@@ -75,25 +75,11 @@ jobs:
       run: |
         mkdir $GITHUB_WORKSPACE/release
         cd $GITHUB_WORKSPACE
-        sudo tar -cJf $GITHUB_WORKSPACE/release/portadesx-2404.tar.xz portadesx-2404
-        echo "TIMESTAMP=$(date +"%Y%m%d%H%M")" >> $GITHUB_ENV
-        echo "SHA256=$(sha256sum $GITHUB_WORKSPACE/release/portadesx-2404.tar.xz | cut -d ' ' -f 1)" >> $GITHUB_ENV
-    - name: Release it!
-      uses: softprops/action-gh-release@v2
+        sudo tar -cJf $GITHUB_WORKSPACE/release/portadesx-2404-aarch64.tar.xz portadesx-2404
+    - name: Upload to artifact
+      uses: actions/upload-artifact@v4
       with:
-          tag_name: 24.04-${{ env.TIMESTAMP }}
-          name: Stable Release ${{ env.TIMESTAMP }}
-          body: |
-            Based on Ubuntu 24.04 LTS
-            Generated on ${{ env.TIMESTAMP }}
-            SHA-256: `${{ env.SHA256 }}`
-          draft: false
-          prerelease: false
-          make_latest: true
-          files: release/portadesx-2404.tar.xz
-      env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        name: portadesx-2404-aarch64
+        path: release/portadesx-2404-aarch64.tar.xz
 
         
-        
-  
