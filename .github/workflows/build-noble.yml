@@ -280,7 +280,7 @@ jobs:
         sudo sed -i "3s|*.|TARBALL_URL['arm']="https://github.com/portadesx/portadesx/releases/download/${github.ref_name}/portadesx-armhf.tar.xz" $GITHUB_WORKSPACE/scripts/portadesx.sh
         sudo sed -i "4s|*.|TARBALL_URL['x86_64']="https://github.com/portadesx/portadesx/releases/download/${github.ref_name}/portadesx-x86_64.tar.xz" $GITHUB_WORKSPACE/scripts/portadesx.sh
         sudo sed -i "5s|*.|TARBALL_SHA256['aarch64']=\"${{ env.AARCH64SHA256 }}\" $GITHUB_WORKSPACE/scripts/portadesx.sh
-        sudo sed -i "6s|*.|TARBALL_SHA256['armhf']=\"${{ env.ARMHFSHA256 }}\" $GITHUB_WORKSPACE/scripts/portadesx.sh
+        sudo sed -i "6s|*.|TARBALL_SHA256['arm']=\"${{ env.ARMHFSHA256 }}\" $GITHUB_WORKSPACE/scripts/portadesx.sh
         sudo sed -i "7s|*.|TARBALL_SHA256['x86_64']=\"${{ env.X8664SHA256 }}\" $GITHUB_WORKSPACE/scripts/portadesx.sh
         git config user.name "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
