@@ -19,12 +19,13 @@ jobs:
 
     - name: Edit distro_plugins
       run: |
-        sudo sed -i "2s|*.|TARBALL_URL['aarch64']="https://github.com/portadesx/portadesx/releases/download/${github.ref_name}/portadesx-aarch64.tar.xz" $GITHUB_WORKSPACE/scripts/portadesx.sh
-        sudo sed -i "3s|*.|TARBALL_URL['arm']="https://github.com/portadesx/portadesx/releases/download/${github.ref_name}/portadesx-armhf.tar.xz" $GITHUB_WORKSPACE/scripts/portadesx.sh
-        sudo sed -i "4s|*.|TARBALL_URL['x86_64']="https://github.com/portadesx/portadesx/releases/download/${github.ref_name}/portadesx-x86_64.tar.xz" $GITHUB_WORKSPACE/scripts/portadesx.sh
-        sudo sed -i "5s|*.|TARBALL_SHA256['aarch64']=\"${{ env.AARCH64SHA256 }}\" $GITHUB_WORKSPACE/scripts/portadesx.sh
-        sudo sed -i "6s|*.|TARBALL_SHA256['arm']=\"${{ env.ARMHFSHA256 }}\" $GITHUB_WORKSPACE/scripts/portadesx.sh
-        sudo sed -i "7s|*.|TARBALL_SHA256['x86_64']=\"${{ env.X8664SHA256 }}\" $GITHUB_WORKSPACE/scripts/portadesx.sh
+        echo "REF_NAME=${GITHUB_REF_NAME}" >> $GITHUB_ENV
+        sudo sed -i "2s|*.|TARBALL_URL['aarch64']="https://github.com/portadesx/portadesx/releases/download/$REF_NAME/portadesx-aarch64.tar.xz" $GITHUB_WORKSPACE/scripts/portadesx.sh
+        sudo sed -i "3s|*.|TARBALL_URL['arm']="https://github.com/portadesx/portadesx/releases/download/$REF_NAME/portadesx-armhf.tar.xz" $GITHUB_WORKSPACE/scripts/portadesx.sh
+        sudo sed -i "4s|*.|TARBALL_URL['x86_64']="https://github.com/portadesx/portadesx/releases/download/$REF_NAME/portadesx-x86_64.tar.xz" $GITHUB_WORKSPACE/scripts/portadesx.sh
+        sudo sed -i "5s|*.|TARBALL_SHA256['aarch64']=\"$AARCH64SHA256\" $GITHUB_WORKSPACE/scripts/portadesx.sh
+        sudo sed -i "6s|*.|TARBALL_SHA256['arm']=\"$ARMHFSHA256\" $GITHUB_WORKSPACE/scripts/portadesx.sh
+        sudo sed -i "7s|*.|TARBALL_SHA256['x86_64']=\"$X8664SHA256\" $GITHUB_WORKSPACE/scripts/portadesx.sh
         git config user.name "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git add .
