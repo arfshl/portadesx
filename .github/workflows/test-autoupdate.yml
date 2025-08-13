@@ -19,12 +19,16 @@ jobs:
 
     - name: Edit distro_plugins
       run: |
+        RELTAG=$(curl -s https://api.github.com/repos/<owner>/<repo>/releases/latest \
+        | grep '"tag_name":' \
+        | cut -d'"' -f4)
+
         echo "REF_NAME=${GITHUB_REF_NAME}" >> $GITHUB_ENV
         chmod +w "$GITHUB_WORKSPACE/scripts/portadesx.sh"
 
-        sed -i "2s|.*|TARBALL_URL['aarch64']=\"https://github.com/portadesx/portadesx/releases/download/${GITHUB_REF_NAME}/portadesx-aarch64.tar.xz\"|" "$GITHUB_WORKSPACE/scripts/portadesx.sh"
-        sed -i "3s|.*|TARBALL_URL['arm']=\"https://github.com/portadesx/portadesx/releases/download/${GITHUB_REF_NAME}/portadesx-armhf.tar.xz\"|" "$GITHUB_WORKSPACE/scripts/portadesx.sh"
-        sed -i "4s|.*|TARBALL_URL['x86_64']=\"https://github.com/portadesx/portadesx/releases/download/${GITHUB_REF_NAME}/portadesx-x86_64.tar.xz\"|" "$GITHUB_WORKSPACE/scripts/portadesx.sh"
+        sed -i "2s|.*|TARBALL_URL['aarch64']=\"https://github.com/portadesx/portadesx/releases/download/$RELTAG/portadesx-aarch64.tar.xz\"|" "$GITHUB_WORKSPACE/scripts/portadesx.sh"
+        sed -i "3s|.*|TARBALL_URL['arm']=\"https://github.com/portadesx/portadesx/releases/download/$RELTAG/portadesx-armhf.tar.xz\"|" "$GITHUB_WORKSPACE/scripts/portadesx.sh"
+        sed -i "4s|.*|TARBALL_URL['x86_64']=\"https://github.com/portadesx/portadesx/releases/download/$RELTAG/portadesx-x86_64.tar.xz\"|" "$GITHUB_WORKSPACE/scripts/portadesx.sh"
 
         sed -i "5s|.*|TARBALL_SHA256['aarch64']=\"${AARCH64SHA256}\"|" "$GITHUB_WORKSPACE/scripts/portadesx.sh"
         sed -i "6s|.*|TARBALL_SHA256['arm']=\"${ARMHFSHA256}\"|" "$GITHUB_WORKSPACE/scripts/portadesx.sh"
