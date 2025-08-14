@@ -29,7 +29,7 @@ PortadesX is a Termux proot-distro rootfs with pre-installed XFCE desktop enviro
 
 ### Minimum System Requirements
 - Android 8.0+ (Fixes for error code [Process completed (signal 9) - press Enter] for Android 12+ can be see [here](https://github.com/agnostic-apollo/Android-Docs/blob/master/en/docs/apps/processes/phantom-cached-and-empty-processes.md#internal-details-for-android-14-and-higher))
-- Supported CPU Architecture: arm64, x64_64/amd64, armv7/armhf
+- 64-bit ARM CPU
 - 4GB of RAM
 - 10GB of empty space
 
