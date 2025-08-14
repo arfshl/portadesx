@@ -1,4 +1,4 @@
-name: build-aarch64
+name: build-focal-aarch64
 
 on:
   workflow_dispatch:
