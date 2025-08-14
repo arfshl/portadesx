@@ -31,7 +31,7 @@ jobs:
         sudo mount --bind /dev/pts $GITHUB_WORKSPACE/portadesx/dev/pts
     - name: Remove snap override on apt
       run: |
-        sudo chroot $GITHUB_WORKSPACE/portadesx /bin/bash -c "apt update && apt install wget sudo && wget https://raw.githubusercontent.com/arfshl/no-snap-on-apt/refs/heads/main/Noble/arm64/setup.sh && sh setup.sh && rm setup.sh"
+        sudo chroot $GITHUB_WORKSPACE/portadesx /bin/bash -c "apt update && apt install wget sudo && wget https://raw.githubusercontent.com/arfshl/no-snap-on-apt/refs/heads/main/Focal/arm64/setup.sh && sh setup.sh && rm setup.sh"
     - name: Install XFCE desktop, VNC, and basic utility
       run: |
         sudo chroot $GITHUB_WORKSPACE/portadesx /bin/bash -c "apt update && apt upgrade -y && apt install xfce4 xfce4-terminal dbus-x11 pulseaudio nano wget curl sudo adduser tigervnc-standalone-server -y && apt clean"
