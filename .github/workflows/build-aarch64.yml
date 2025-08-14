@@ -1,4 +1,4 @@
-name: noble-aarch64
+name: build-aarch64
 
 on:
   workflow_dispatch:
@@ -17,11 +17,11 @@ jobs:
     - uses: actions/checkout@v4
     - name: Download rootfs
       run: |
-        wget -q https://github.com/termux/proot-distro/releases/download/v4.18.0/ubuntu-noble-aarch64-pd-v4.18.0.tar.xz -P $GITHUB_WORKSPACE/
+        wget -q https://github.com/termux/proot-distro/releases/download/v4.8.0/ubuntu-focal-aarch64-pd-v4.8.0.tar.xz -P $GITHUB_WORKSPACE/
     - name: Decompress rootfs
       run: |
-        sudo tar -xJf ubuntu-noble-aarch64-pd-v4.18.0.tar.xz
-        mv ubuntu-noble-aarch64 portadesx
+        sudo tar -xJf ubuntu-focal-aarch64-pd-v4.8.0.tar.xz
+        mv ubuntu-focal-aarch64 portadesx
     - name: Mount important filesystem
       run: |
         sudo mount --bind /proc $GITHUB_WORKSPACE/portadesx/proc
@@ -82,10 +82,10 @@ jobs:
     - name: Release it!
       uses: softprops/action-gh-release@v2
       with:
-          tag_name: ${{ env.TIMESTAMP }}
-          name: Release aarch64
+          tag_name: focal-aarch64
+          name: 20.04 aarch64
           body: |
-            Based on Ubuntu 24.04 LTS
+            Based on Ubuntu 20.04 LTS
             SHA-256: `${{ env.SHA256 }}`
           draft: false
           prerelease: false
