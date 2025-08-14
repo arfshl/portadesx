@@ -82,7 +82,7 @@ jobs:
     - name: Release it!
       uses: softprops/action-gh-release@v2
       with:
-          tag_name: ${{ env.TIMESTAMP }}
+          tag_name: noble-aarch64
           name: Release aarch64
           body: |
             Based on Ubuntu 24.04 LTS
