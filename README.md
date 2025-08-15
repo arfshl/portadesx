@@ -20,7 +20,7 @@ PortadesX is a Termux proot-distro rootfs with pre-installed XFCE desktop enviro
 - [Mousepad Text Editor](https://docs.xfce.org/apps/mousepad/start)
 - [Xarchiver File Archiver](https://github.com/ib/xarchiver)
 - [Galculator](https://launchpad.net/ubuntu/+source/galculator)
-- Chromium shortcut to Microsoft Office Online (except armhf), see [docs](https://github.com/portadesx/portadesx/blob/main/docs%2FREADME.md) for offline alternative 
+- Chromium shortcut to Microsoft Office Online, see [docs](https://github.com/portadesx/portadesx/blob/main/docs%2FREADME.md) for offline alternative 
 
 ### Screenshots
 ![1](https://raw.githubusercontent.com/portadesx/portadesx-screenshots/main/24.04/xfce/desktop.jpg)
