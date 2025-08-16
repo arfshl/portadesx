@@ -16,7 +16,7 @@ wget https://raw.githubusercontent.com/portadesx/portadesx/refs/heads/main/scrip
 
 # PulseAudio at startup on bash.bashrc
 echo 'LD_PRELOAD=/system/lib64/libskcodec.so
-pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1 >> $PREFIX/etc/bash.bashrc
+pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1' >> $PREFIX/etc/bash.bashrc
 
 # Create startup script
 # for CLI session
