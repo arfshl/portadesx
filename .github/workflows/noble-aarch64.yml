@@ -66,6 +66,7 @@ jobs:
         sudo chroot $GITHUB_WORKSPACE/portadesx /bin/bash -c "ln -s /usr/share/applications/xarchiver.desktop /home/portadesx/Desktop/xarchiver.desktop"
         sudo chroot $GITHUB_WORKSPACE/portadesx /bin/bash -c "ln -s /usr/share/applications/org.xfce.mousepad.desktop /home/portadesx/Desktop/org.xfce.mousepad.desktop"
         sudo chroot $GITHUB_WORKSPACE/portadesx /bin/bash -c "ln -s /usr/share/applications/xfce4-terminal.desktop /home/portadesx/Desktop/xfce4-terminal.desktop"
+        sudo chroot $GITHUB_WORKSPACE/portadesx /bin/bash -c "chmod -R 775 /home/portadesx/Desktop/"
     - name: Unmount important filesystem
       run: |
         sudo umount -l $GITHUB_WORKSPACE/portadesx/proc
