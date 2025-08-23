@@ -27,7 +27,7 @@ export USER=portadesx
 export HOME=/home/portadesx
 vncserver -kill :3
 rm -rf /home/portadesx/.vnc/localhost:3.pid
-rm -rf /tmp/.X1-lock
+rm -rf /tmp/.X3-lock
 rm -rf /tmp/.X11-unix/X3' >> /usr/local/bin/stopvnc
 
 # Create script for restarting VNC server
