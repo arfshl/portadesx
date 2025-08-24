@@ -15,7 +15,7 @@ PortadesX is a Termux proot-distro rootfs with pre-installed XFCE desktop enviro
 - [Chromium Web Browser (except armhf)](https://chromium.org)
 - [Mozilla Thunderbird](https://thunderbird.net)
 - [VLC Media Player](https://www.videolan.org/vlc/)
-- [Evince PDF Viewer](https://wiki.gnome.org/Apps/Evince)
+- [Evince PDF Viewer](https://apps.gnome.org/Evince/)
 - [Ristretto Image Viewer](https://docs.xfce.org/apps/ristretto/start)
 - [Mousepad Text Editor](https://docs.xfce.org/apps/mousepad/start)
 - [Xarchiver File Archiver](https://github.com/ib/xarchiver)
