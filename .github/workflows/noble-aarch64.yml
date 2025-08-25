@@ -78,9 +78,9 @@ jobs:
       run: |
         mkdir $GITHUB_WORKSPACE/release
         cd $GITHUB_WORKSPACE
-        sudo tar -cJf $GITHUB_WORKSPACE/release/portadesx-aarch64.tar.xz portadesx
+        sudo tar -cJf $GITHUB_WORKSPACE/release/portadesx.tar.xz portadesx
         echo "TIMESTAMP=$(date +"%Y%m%d%H%M")" >> $GITHUB_ENV
-        echo "SHA256=$(sha256sum $GITHUB_WORKSPACE/release/portadesx-aarch64.tar.xz | cut -d ' ' -f 1)" >> $GITHUB_ENV
+        echo "SHA256=$(sha256sum $GITHUB_WORKSPACE/release/portadesx.tar.xz | cut -d ' ' -f 1)" >> $GITHUB_ENV
     - name: Release it!
       uses: softprops/action-gh-release@v2
       with:
@@ -91,6 +91,6 @@ jobs:
           draft: false
           prerelease: false
           make_latest: true
-          files: release/portadesx-aarch64.tar.xz
+          files: release/portadesx.tar.xz
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
